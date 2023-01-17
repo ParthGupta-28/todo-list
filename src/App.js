@@ -6,17 +6,6 @@ import AddTodo from "./AddTodo";
 import { useState, useEffect } from "react";
 
 function App() {
-  const initialTodos = [
-    {
-      id: 1,
-      body: "get bread",
-    },
-    {
-      id: 2,
-      body: "get butter",
-    },
-  ];
-
   const [todos, setTodos] = useState(function () {
     return JSON.parse(localStorage.getItem("todos")) || [];
   });
